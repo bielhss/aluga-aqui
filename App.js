@@ -1,0 +1,72 @@
+import { NavigationContainer } from '@react-navigation/native';
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
+import { StyleSheet } from 'react-native';
+import SignUp from './src/auth/signup';
+import Login from './src/auth/login';
+import Tabs from './src/tabs';
+import Publicar from './src/publicar';
+import Post from './src/post';
+import Locacoes from './src/locacoes';
+
+export default function App() {
+
+  const Stack = createNativeStackNavigator();
+
+  return (
+    <NavigationContainer>
+      <Stack.Navigator>
+        <Stack.Screen
+          name="Login"
+          component={Login}
+          options={{
+            headerShown: false
+          }}
+        />
+        <Stack.Screen
+          name="SignUp"
+          component={SignUp}
+          options={{
+            headerShown: false
+          }}
+        />
+        <Stack.Screen
+          name="Home"
+          component={Tabs}
+          options={{
+            headerShown: false
+          }}
+        />
+        <Stack.Screen
+          name="Publicar"
+          component={Publicar}
+          options={{
+            headerShown: false
+          }}
+        />
+        <Stack.Screen
+          name="Post"
+          component={Post}
+          options={{
+            headerShown: false
+          }}
+        />
+        <Stack.Screen
+          name="Locacoes"
+          component={Locacoes}
+          options={{
+            headerShown: false
+          }}
+        />
+      </Stack.Navigator>
+    </NavigationContainer>
+  );
+}
+
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    backgroundColor: '#fff',
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+});

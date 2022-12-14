@@ -1,0 +1,38 @@
+{
+  "main": "node_modules/expo/AppEntry.js",
+  "scripts": {
+    "start": "expo start",
+    "android": "expo start --android",
+    "ios": "expo start --ios",
+    "web": "expo start --web"
+  },
+  "dependencies": {
+    "@react-native-async-storage/async-storage": "^1.17.11",
+    "@react-native-community/datetimepicker": "^6.7.1",
+    "@react-navigation/bottom-tabs": "^6.4.3",
+    "@react-navigation/native": "^6.0.16",
+    "@react-navigation/native-stack": "^6.9.4",
+    "cors": "^2.8.5",
+    "expo": "~47.0.8",
+    "expo-image-picker": "^14.0.2",
+    "expo-status-bar": "~1.4.2",
+    "express": "^4.18.2",
+    "moment": "^2.29.4",
+    "multer": "^1.4.5-lts.1",
+    "mysql2": "^2.3.3",
+    "react": "18.1.0",
+    "react-native": "0.70.5",
+    "react-native-calendars": "^1.1292.0",
+    "react-native-date-picker": "^4.2.6",
+    "react-native-image-picker": "^4.10.2",
+    "react-native-ionicons": "^4.6.5",
+    "react-native-paper": "^4.12.5",
+    "react-native-vector-icons": "^9.2.0",
+    "sequelize": "^6.26.0",
+    "sequelize-cli": "^6.5.2"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.9"
+  },
+  "private": true
+}
